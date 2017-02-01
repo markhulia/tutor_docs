@@ -1,0 +1,6 @@
+TODO: check get_list_all_or_404 example
+There’s also a get_list_or_404() function, which works just as get_object_or_404()
+– except using filter() instead of get(). It raises Http404 if the list is empty.
+
+TODO: avoiding race condition (when two users vote at exact same time, only one vote will be stored)
+https://docs.djangoproject.com/en/1.10/ref/models/expressions/#avoiding-race-conditions-using-f
