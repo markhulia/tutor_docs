@@ -2,13 +2,13 @@ from django.core.urlresolvers import reverse
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
-
+# import pdb; pdb.set_trace()
 from .models import Question, Choice
 
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
-    # override default (question_list) context variable
+    # override default (question_list) context variables
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
