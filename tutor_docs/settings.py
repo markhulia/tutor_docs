@@ -108,12 +108,14 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Stockholm'
 
 USE_I18N = True
 
 USE_L10N = True
 
+# timezone-aware datetime
+# https://docs.djangoproject.com/en/1.10/topics/i18n/timezones/
 USE_TZ = True
 
 

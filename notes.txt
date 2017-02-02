@@ -4,3 +4,6 @@ There’s also a get_list_or_404() function, which works just as get_object_or_4
 
 TODO: avoiding race condition (when two users vote at exact same time, only one vote will be stored)
 https://docs.djangoproject.com/en/1.10/ref/models/expressions/#avoiding-race-conditions-using-f
+
+    def current_app(self):
+        return None if self._current_app is _current_app_undefined else self._current_app
