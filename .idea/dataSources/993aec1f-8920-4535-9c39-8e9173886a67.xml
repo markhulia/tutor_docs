@@ -168,7 +168,7 @@ codename</ColNames>
     </column>
     <column id="44" parent="6" name="username">
       <Position>10</Position>
-      <DataType>VARCHAR(30)(0,-1)|12</DataType>
+      <DataType>VARCHAR(150)(0,-1)|12</DataType>
       <NotNull>1</NotNull>
     </column>
     <index id="45" parent="6" name="sqlite_autoindex_auth_user_1">
